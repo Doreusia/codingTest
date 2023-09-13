@@ -1,11 +1,11 @@
-package baekjoon;
+package baekjoon.bj255556;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class bj255556 {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
