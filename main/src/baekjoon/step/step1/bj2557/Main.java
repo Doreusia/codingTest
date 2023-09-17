@@ -1,4 +1,4 @@
-package baekjoon.step.bj2557;
+package baekjoon.step.step1.bj2557;
 
 public class Main {
     public static void main(String[] args) {
