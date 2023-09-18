@@ -2,7 +2,6 @@ package programmers.숫자_문자열과_영단어;
 
 public class Solution {
     public int solution(String str) {
-        // 문자가 들어오면
         StringBuffer sb = new StringBuffer();
         String[] word = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         int[] num = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
