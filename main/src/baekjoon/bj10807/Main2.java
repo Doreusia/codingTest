@@ -3,23 +3,23 @@ package baekjoon.bj10807;
 import java.util.Hashtable;
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
+    // HashTable 메서드 사용한 방법
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int count = 0;
         int n = sc.nextInt();
         Hashtable<Integer, Integer> ht = new Hashtable<>();
         for (int i = 0; i < n; i++) {
-            ht.put(i, sc.nextInt());
+            int k = sc.nextInt();
+            if (ht.containsKey(k)) {
+                ht.put(k, ht.get(k) + 1);
+            } else {
+                ht.put(k, 1);
+            }
         }
         int v = sc.nextInt();
 
-        for (Integer value : ht.values()) {
-            if (value == v) {
-                count++;
-            }
-        }
-        System.out.println(count);
+        System.out.println(ht.get(v) == null ? 0 : ht.get(v));
 
     }
 }
